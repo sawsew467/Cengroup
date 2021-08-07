@@ -1,0 +1,39 @@
+@media (min-width: 1024px) {
+
+}
+
+@media (min-width: 740px) and (max-width:1023px) {
+    .members img {
+    width: auto;
+    height: 44px;
+    }
+}
+
+@media (max-width: 739px) {
+    #header {
+        padding: 0 12px;
+    }
+
+    .header .logo img {
+        width: 100%;
+    }
+     
+    .news {
+        margin: 0 12px;
+    }
+
+    .news-slide {
+        padding: 0 8px;
+    }
+
+    .activities {
+        padding: 0 8px;
+    }
+
+    .member {
+        display: none;
+    }
+    .recruitment {
+        padding: 8px;
+    }
+}
