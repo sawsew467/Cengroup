@@ -195,6 +195,7 @@ img {
 
 .activities-img:hover .des {
     display: inherit;
+    transition-duration: 3s;
 }
 
 .activities-img .des .go-btn {
@@ -363,7 +364,8 @@ img {
     padding: 40px 0;
 }
 
-.footer-container p, a {
+.footer-container p, 
+.footer-container a {
     text-align: center;
     font-size: 18px;
     text-shadow: 1px 1px 2px black;
