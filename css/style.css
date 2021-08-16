@@ -399,6 +399,7 @@ img {
     align-items: center;
     flex-direction: column;
     color: #fff;
+    background: url(../img/footer/bg-dangky.jpg);
 }
 
 .footer-container img {
