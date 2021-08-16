@@ -21,6 +21,32 @@
                         <i class="fas fa-bars bars-btn"></i>
                         <i class="fas fa-search search-btn"></i>
                     </div>
+                    <ul class="navbar">
+                        <li>
+                            <a href="">Giới thiệu</a>
+                            <i class="fas fa-angle-right"></i>
+                            <ul class="sub-nav">
+                                <li> <a href="">Giới thiệu chung</a></li>
+                                <li> <a href="">Đội ngũ nhân sự</a></li>
+                                <li> <a href="">Văn hóa doanh nghiệp</a></li>
+                                <li> <a href="">HỒ SƠ THƯƠNG HIỆU</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Lĩnh vực hoạt động</a></li>
+                        <li>
+                            <a href="">Tin tức Cen</a>
+                            <i class="fas fa-angle-right"></i>
+                            <ul class="sub-nav">
+                                <li> <a href="">HĐ văn hóa - Xã hội</a></li>
+                                <li> <a href="">HĐ KINH DOANH</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">TUYỂN DỤNG</a></li>
+                        <li><a href="">Ra Khơi</a></li>
+                        <li><a href="">Radio</a></li>
+                        <li><a href="">LIÊN HỆ</a></li>
+                        <li><a href="">Check mail</a></li>
+                    </ul>
                     <div class="col l-4 m-4 c-4 logo">
                         <img src="./img/Logo/mainlogo.png" alt="">
                     </div>
@@ -86,7 +112,7 @@
                                     Cen Group có hệ thống phân phối chuyên nghiệp gần 20 năm trên thị trường. Công ty Cổ phần Bất động sản Thế Kỷ Cen Land (CRE) là công ty con của Cen Group đảm nhận mảng phân phối và tiếp thị BĐS.
                                 </div>
                                 <div class="go-btn">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +126,7 @@
                                     Cen Invest là công ty con thuộc Tập đoàn Cen Group chuyên về mảng đầu tư BĐS. Cen Invest là chủ đầu tư của nhiều dự án nhà ở chất lượng cao như: Parkview Residence; The K-Park; Vườn Sen (Đồng Kỵ, Bắc Ninh);…
                                 </div>
                                 <div class="go-btn">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +140,7 @@
                                     RSM là công ty truyền thông chuyên về tư vấn giải pháp Marketing BĐS chuyên nghiệp hàng đầu.
                                 </div>
                                 <div class="go-btn">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
@@ -128,7 +154,7 @@
                                     Đón đầu làn sóng dịch chuyển đầu tư quốc tế vào Việt Nam trong thời gian tới, Cen Land – Công ty thành viên của Cen Group mở rộng hệ sinh thái, thêm nhiều nhãn mới hoạt động trong lĩnh vực BĐS Công nghiệp và Logistics.
                                 </div>
                                 <div class="go-btn">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +168,7 @@
                                     Cen Value là công ty chuyên về thẩm định giá với công nghệ thẩm định giá trực tuyến hiện đại và chuyên nghiệp.
                                 </div>
                                 <div class="go-btn">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
@@ -156,7 +182,7 @@
                                     Ngoài BĐS là lĩnh vực kinh doanh chính, Cen Group cũng tham gia đầu tư vào các lĩnh vực khác như: Golf, Y tế, Nông nghiệp và Thời trang...
                                 </div>
                                 <div class="go-btn">
-                                    <i class="fas fa-chevron-right"></i>
+                                    <i class="fas fa-angle-right"></i>
                                 </div>
                             </div>
                         </div>
@@ -255,6 +281,18 @@
             </div>
         </div>
         <img class="btn-radio" src="./img/radio/btn-radio.jpg" alt="">
+        <script>
+            var barBtn = document.querySelector('.bars-btn');
+
+            barBtn.onclick = function() {
+                var navBar = document.querySelector('.navbar');
+                var isActive = navBar.classList.contains('active');
+                if (!isActive) {
+                    navBar.classList.add('active');
+                } else navBar.classList.remove('active');
+            }
+
+        </script>
     </div>
 </body>
 </html>

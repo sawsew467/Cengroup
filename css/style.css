@@ -10,10 +10,11 @@ img {
     display: flex;
     justify-content: space-between;
     background-color: #000000d4;
-    box-shadow: 0 8px 8px rgb(0 0 0 / 20%);
+    box-shadow: 0 8px 8px rgb(0 0 0 / 10%);
 }
 
 .header {
+    position: relative;
     height: 100%;
     align-items: center;
 }
@@ -25,14 +26,75 @@ img {
     cursor: pointer;
 }
 
+.bars-btn {
+    display: inline-block;
+}
+
 .left-header .search-btn {
     font-size: 30px;
     color: #444444;
     border-left: 1px solid #ccc;
     margin-left: 13px;
-    padding-left: 20px;
+    padding-left: 15px;
     font-weight: 500;
     cursor: pointer;
+}
+
+.navbar {
+    /* display: none; */
+    position: absolute;
+    left: 0;
+    top: -400px;
+    text-transform: uppercase;
+    background-color: #000000d4;
+    min-width: 260px;
+    color: #fff;
+    box-shadow: 2px 4px 4px 1px rgb(0 0 0 / 20%);
+    transition: all 0.3s;
+}
+
+.navbar.active {
+    display: block;
+    top: calc(100% + 1px);
+}
+
+.navbar li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 15px;
+    transition: all 0.3s;
+    cursor: pointer;
+    align-items: center;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar li i {
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+.navbar li:hover {
+    background-color:#f58a20;
+}
+
+.navbar li:hover .sub-nav {
+    display: block;
+}
+
+.sub-nav {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    text-transform: uppercase;
+    background-color: #000000d4;
+    min-width: 260px;
+    color: #fff;
 }
 
 .header .logo {
